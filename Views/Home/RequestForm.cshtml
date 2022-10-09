@@ -30,10 +30,10 @@
         </div>
         <div>
         <label>What is your role</label>
-        <select asp-for="ProfOrStud">
-        <option value="">Choose an option</option>
-        <option value="true">Professor</option>
-        <option value="false">Student</option>
+        <select asp-for="ProfOrStud" asp-items="Html.GetEnumSelectList<ProfOrStud>()">
+            <option selected="selected" value="">Please select your role</option>
+            </select>
+        
         </select>
         </div>
         <div>

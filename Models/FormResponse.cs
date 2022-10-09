@@ -9,6 +9,7 @@ namespace ITEquipReq.Models
 
 {
     public enum EquipType{Laptop, Phone, Tablet, Another}
+    public enum ProfOrStud{Professor, Student}
     public class FormResponse
     {
         [Required (ErrorMessage = "Please enter your name")]
@@ -25,7 +26,10 @@ namespace ITEquipReq.Models
         public string Phone {get; set;}
         
         [Required (ErrorMessage = "Please specify whether you are a professor or a student")]
-        public bool? ProfOrStud {get; set;}
+        //public bool? ProfOrStud {get; set;}
+
+        public ProfOrStud ProfOrStud {get; set;}
+
 
         //public string EquipType {get; set;}
         

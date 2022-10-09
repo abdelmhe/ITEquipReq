@@ -1,0 +1,31 @@
+@model IEnumerable<ITEquipReq.Models.FormResponse>
+@{
+        Layout=null;
+}
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name= "viewport" content="width=device-width"/>
+            <title> Requests</title>
+            </head>
+            <body>
+                <h2> Here is the list of requests</h2>
+                <table>
+                    <thead>
+                        <tr><th>Equipment type</th> <th>Name</th><th>Role</th></tr>
+                    </thead>
+                    <tbody>
+                        @foreach (ITEquipReq.Models.FormResponse r in Model)
+
+                        {
+                            <tr>
+                                <td>@r.EquipType.ToString()</td>
+                                <td>@r.Name</td>
+                                <td>@r.ProfOrStud</td>
+                            </tr>
+                            
+                        }
+                    </tbody>
+                </table>
+            </body>
+    </html>

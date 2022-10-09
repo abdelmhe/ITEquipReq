@@ -27,12 +27,14 @@ public class HomeController : Controller
 
 
     }
-    // public ViewResult ListResponses()
+
+   
+    public ViewResult Requests()
     
-    // {
-    //     return View(Repository.Responses.Where(r => r.willAttend == true));
+    {
+        return View(Repository.Responses);
 
 
-    // }
+    }
     
 }
