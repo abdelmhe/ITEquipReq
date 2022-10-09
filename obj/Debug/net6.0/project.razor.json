@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/Confirmation.cshtml",
+      "TargetPath": "Views\\Home\\Confirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

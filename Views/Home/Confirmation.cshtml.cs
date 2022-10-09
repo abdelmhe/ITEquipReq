@@ -8,11 +8,11 @@ using Microsoft.Extensions.Logging;
 
 namespace ITEquipReq.Views.Home
 {
-    public class RequestForm : PageModel
+    public class Confirmation : PageModel
     {
-        private readonly ILogger<RequestForm> _logger;
+        private readonly ILogger<Confirmation> _logger;
 
-        public RequestForm(ILogger<RequestForm> logger)
+        public Confirmation(ILogger<Confirmation> logger)
         {
             _logger = logger;
         }
