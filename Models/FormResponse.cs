@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 namespace ITEquipReq.Models
 {
@@ -16,6 +17,9 @@ namespace ITEquipReq.Models
         public string Email {get; set;}
 
         [Required (ErrorMessage = "Please enter your phone number")]
+
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
+        
         public string Phone {get; set;}
         
         [Required (ErrorMessage = "Please specify whether you are a professor or a student")]
