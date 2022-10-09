@@ -10,10 +10,14 @@ namespace ITEquipReq.Models
         private static List<FormResponse> responses = new List<FormResponse>();
         public static IEnumerable<FormResponse> Responses => responses;
 
+        public static int id =0;
+
         public static void AddResponse (FormResponse response)
         {
             responses.Add(response);
+            id= id+1;
 
         }
+        
     }
 }
