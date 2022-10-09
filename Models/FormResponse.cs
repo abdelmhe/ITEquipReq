@@ -31,7 +31,8 @@ namespace ITEquipReq.Models
         public string RequestDetails {get; set;}
 
         [Required (ErrorMessage = "Please enter the duration needed")]
-        public string Duration {get; set;}
+        [Range(0, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
+        public int Duration {get; set;}
         
 
         
