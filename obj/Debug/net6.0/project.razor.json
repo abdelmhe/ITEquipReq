@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/RequestForm.cshtml",
+      "TargetPath": "Views\\Home\\RequestForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
