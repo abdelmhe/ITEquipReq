@@ -1,0 +1,49 @@
+@{
+    Layout = "_Layout";
+}
+
+
+<!DOCTYPE>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width"/>
+        <title>RSVPForm</title>
+    </head>
+
+    <body>
+        <form asp-action="RequestForm" method="post">
+            <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Name">Your name:</label>
+            <input asp-for="Name"/>
+        </div>
+         <div>
+            <label asp-for="Email">Your Email:</label>
+            <input asp-for="Email"/>
+        </div>
+         <div>
+            <label asp-for="Phone">Your phone:</label>
+            <input asp-for="Phone"/>
+        </div>
+        <div>
+        <label>What is your role</label>
+        <select asp-for="willAttend">
+        <option value="">Choose an option</option>
+        <option value="true">Professor</option>
+        <option value="false">Student</option>
+        </select>
+        </div>
+        <div>
+            <label asp-for="RequestDetails">Request Details:</label>
+            <input asp-for="RequestDetails"/>
+        </div>
+
+        <div>
+            <label asp-for="Duration">Duration needed:</label>
+            <input asp-for="Duration"/>
+        </div>
+        <button type= "submit">Submit Request Form</button>
+        </form>
+
+    </body>
+</html>
