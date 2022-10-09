@@ -1,6 +1,6 @@
 
 
-@model ITEquipReq.Models.FormResponses
+@model ITEquipReq.Models.FormResponse
 @{
     Layout = "_Layout";
 }
@@ -37,13 +37,13 @@
         </select>
         </div>
         <div>
-        <label>What is your role</label>
+        <label>What equipment do you need?</label>
         <select asp-for="EquipType">
         <option value="">Choose an option</option>
-        <option value="Laptop">Laptop</option>
-        <option value="Phone">Phone</option>
-        <option value="Tablet">Tablet</option>
-        <option value="Another">Another</option>
+        <option value="LaptopE">Laptop</option>
+        <option value="PhoneE">Phone</option>
+        <option value="TabletE">Tablet</option>
+        <option value="AnotherE">Another</option>
         </select>
         </div>
         <div>
