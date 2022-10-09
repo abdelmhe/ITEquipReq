@@ -6,7 +6,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
 namespace ITEquipReq.Models
+
 {
+    public enum EquipType{Laptop, Phone, Tablet, Another}
     public class FormResponse
     {
         [Required (ErrorMessage = "Please enter your name")]
@@ -25,7 +27,11 @@ namespace ITEquipReq.Models
         [Required (ErrorMessage = "Please specify whether you are a professor or a student")]
         public bool? ProfOrStud {get; set;}
 
-        public string EquipType {get; set;}
+        //public string EquipType {get; set;}
+        
+        public EquipType EquipType{get;set;}
+        
+
 
         [Required (ErrorMessage = "Please enter your request details")]
         public string RequestDetails {get; set;}

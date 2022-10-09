@@ -38,12 +38,10 @@
         </div>
         <div>
         <label>What equipment do you need?</label>
-        <select asp-for="EquipType">
-        <option value="">Choose an option</option>
-        <option value="LaptopE">Laptop</option>
-        <option value="PhoneE">Phone</option>
-        <option value="TabletE">Tablet</option>
-        <option value="AnotherE">Another</option>
+        <select asp-for="EquipType" asp-items="Html.GetEnumSelectList<EquipType>()">
+            <option selected="selected" value="">Please select the device type</option>
+            </select>
+        
         </select>
         </div>
         <div>
