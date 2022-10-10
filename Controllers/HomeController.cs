@@ -47,5 +47,13 @@ public class HomeController : Controller
     }
 
     // Available Equipment ActionMethod
+
+      public ViewResult AvailableEquipment()
+    
+    {
+        return View(EquipmentRepository.GetEquipment().Where(r => r.Availability == true));
+
+
+    }
     
 }
