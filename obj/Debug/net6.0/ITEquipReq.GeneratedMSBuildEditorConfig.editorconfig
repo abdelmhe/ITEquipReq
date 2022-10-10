@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/AllEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BbGxFcXVpcG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/AvailableEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BdmFpbGFibGVFcXVpcG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/Confirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

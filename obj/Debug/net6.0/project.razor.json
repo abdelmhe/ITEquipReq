@@ -16298,6 +16298,11 @@
   "RootNamespace": "ITEquipReq",
   "Documents": [
     {
+      "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/AvailableEquipment.cshtml",
+      "TargetPath": "Views\\Home\\AvailableEquipment.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -16325,6 +16330,11 @@
     {
       "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/RequestForm.cshtml",
       "TargetPath": "Views\\Home\\RequestForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/hebahisham/Desktop/EnterpriseAssign/ITEquipReq/Views/Home/AllEquipment.cshtml",
+      "TargetPath": "Views\\Home\\AllEquipment.cshtml",
       "FileKind": "mvc"
     },
     {

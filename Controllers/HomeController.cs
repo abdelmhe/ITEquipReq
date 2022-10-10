@@ -36,5 +36,16 @@ public class HomeController : Controller
 
 
     }
+
+    // All Equipment ActionMethod 
+    public ViewResult AllEquipment()
+    
+    {
+        return View(EquipmentRepository.GetEquipment());
+
+
+    }
+
+    // Available Equipment ActionMethod
     
 }

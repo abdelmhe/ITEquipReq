@@ -1,0 +1,33 @@
+@model IEnumerable<ITEquipReq.Models.Equipment>
+
+    @{
+        Layout=null;
+
+    }
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta name= "viewport" content="width=device-width"/>
+            <title> Responses</title>
+            </head>
+            <body>
+                <h2> Here is the list of Equipment</h2>
+                <table>
+                    <thead>
+                        <tr><th>ID</th> <th>Description</th><th>Availability</th></tr>
+                    </thead>
+                    <tbody>
+                        @foreach (ITEquipReq.Models.Equipment r in Model)
+
+                        {
+                            <tr>
+                                <td>@r.Id</td>
+                                <td>@r.Description</td>
+                                <td>@r.Availability</td>
+                            </tr>
+                            
+                        }
+                    </tbody>
+                </table>
+            </body>
+    </html>
