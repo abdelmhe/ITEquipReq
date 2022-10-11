@@ -1,5 +1,6 @@
 @model IEnumerable<ITEquipReq.Models.Equipment>
 
+
     @{
         Layout=null;
 
@@ -25,7 +26,14 @@
                             <tr>
                                 <td>@r.Id</td>
                                 <td>@r.Description</td>
-                                <td>@r.Availability</td>
+                                @if (r.Availability == true){
+                                <td class="bg-success">@r.Availability</td>
+                                }
+                                else{
+                                     <td class="bg-danger">@r.Availability</td>
+
+                                }
+
                             </tr>
                             
                         }

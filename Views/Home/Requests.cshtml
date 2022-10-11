@@ -7,12 +7,14 @@
         <head>
             <meta name= "viewport" content="width=device-width"/>
             <title> Requests</title>
+            <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
             </head>
             <body>
-                <h2> Here is the list of requests</h2>
-                <table>
+                <div class="text-center p-2">
+                <h2 class="text-center"> Here is the list of requests</h2>
+                <table class="table table-bordered table-striped table-sm">
                     <thead>
-                        <tr><th>Equipment type</th> <th>Name</th><th>Role</th></tr>
+                        <tr><th>Equipment type</th> <th>Name</th><th>Role</th><th>Accept</th><th>Reject</th></tr>
                     </thead>
                     <tbody>
                         @foreach (ITEquipReq.Models.FormResponse r in Model)
@@ -29,5 +31,6 @@
                         }
                     </tbody>
                 </table>
+                </div>
             </body>
     </html>
