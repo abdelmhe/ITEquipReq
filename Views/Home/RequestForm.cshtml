@@ -10,27 +10,33 @@
 <html>
     <head>
         <meta name="viewport" content= "width=device-width"/>
-        <title>RSVPForm</title>
+        <title>RequestForm</title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
     </head>
 
     <body>
-        <form asp-action="RequestForm" method="post">
+        <h5 class="bg-primary text-white text-center m-2 p-2">Request Form</h5>
+
+        <form asp-action="RequestForm" method="post" class="m-2">
             <div asp-validation-summary="All"></div>
-        <div>
-            <label asp-for="Name">Your name:</label>
-            <input asp-for="Name"/>
+            <div class="form-group">
+        
+            <label asp-for="Name" class="form-label">Your name:</label>
+            <input asp-for="Name" class="form-control"/>
         </div>
-         <div>
-            <label asp-for="Email">Your Email:</label>
-            <input asp-for="Email"/>
+         <div class="form-group">
+            <label asp-for="Email" class="form-label">Your Email:</label>
+            <input asp-for="Email" class="form-control"/>
         </div>
-         <div>
-            <label asp-for="Phone">Your phone:</label>
-            <input asp-for="Phone"/>
+         <div class="form-group">
+            <label asp-for="Phone" class="form-label">Your phone:</label>
+            <input asp-for="Phone" class="form-control"/>
         </div>
-        <div>
-        <label>What is your role</label>
-        <select asp-for="ProfOrStud" asp-items="Html.GetEnumSelectList<ProfOrStud>()">
+        <div class="form-group">
+            <label asp-for="ProfOrStud" class="form-label">
+                What is your role
+                </label>
+        <select asp-for="ProfOrStud"class="form-control" asp-items="Html.GetEnumSelectList<ProfOrStud>()">
             <option selected="selected" value="">Please select your role</option>
             </select>
         
@@ -41,20 +47,18 @@
         <select asp-for="EquipType" asp-items="Html.GetEnumSelectList<EquipType>()">
             <option selected="selected" value="">Please select the device type</option>
             </select>
-        
-        </select>
         </div>
         <div>
-            <label asp-for="RequestDetails">Request Details:</label>
-            <input asp-for="RequestDetails"/>
+            <label asp-for="RequestDetails" class="form-label">Request Details:</label>
+            <input asp-for="RequestDetails" class="form-control"/>
         </div>
 
         <div>
-            <label asp-for="Duration">Duration needed:</label>
-            <input asp-for="Duration"/>
+            <label asp-for="Duration" class="form-label">Duration needed:</label>
+            <input asp-for="Duration" class="form-control"/>
             
         </div>
-        <button type= "submit">Submit Request Form</button>
+        <button type= "submit" class="btn btn-primary mt-3">Submit Request Form</button>
         </form>
 
     </body>
